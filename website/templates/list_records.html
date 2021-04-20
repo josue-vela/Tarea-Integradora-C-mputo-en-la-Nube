@@ -1,0 +1,22 @@
+{% extends "base.html" %} {% block title %}List Records{% endblock %} {%
+block content %}
+{% endblock %}
+
+<table border=1>
+    <thead>
+        <tr>
+            <td>Name</td>
+            <td>Time IN</td>
+            <td>date IN</td>
+            <td>code</td>
+        </tr>
+    </thead>
+
+    {% for row in rows %}
+    <tr>
+        <td>{{row["name"]}}</td>
+        <td>{{row["date"]}}</td>
+        <td> {{row["time"]}}</td>
+    </tr>
+    {% endfor %}
+</table>

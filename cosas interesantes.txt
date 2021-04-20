@@ -1,0 +1,20 @@
+Comandos docker
+
+docker build -t parking . (genera el contenedor)
+docker rmi -f parking	(elimina el contenedor)
+docker run -it parking /bin/sh (ejecuta el contenedor)
+docker tag parking:latest psybeats/appflask:appflask1 (crea una nueva imagen a partir de la primera)
+docker push psybeats/appflask:appflask1 (publica la nueva imagen)
+docker run -it -p 7000:8420 -d appflask1 (ejecuta la nueva imagen de fondo y con puertos especificos)
+
+docker login (iniciar sesion en docker)
+docker system prune -a (BORRA TODO
+
+docker pull psybeats/appflask:appflask1
+
+AWS DOCKERS
+https://aws.amazon.com/es/getting-started/hands-on/deploy-docker-containers/
+https://www.youtube.com/watch?v=IDUyROEXnNA
+
+Comando para instalar desde txt pip
+pip install -r requirements.txt

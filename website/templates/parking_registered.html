@@ -1,0 +1,66 @@
+{% extends "base.html" %} {% block title %}Parking Registered{% endblock %} {%
+block content %}
+<form method="POST">
+  <p></p>
+  <h3 align="center">Parking Registered</h3>
+  <div class="form-group">
+    <label for="name">Name</label>
+    <input
+      type="text"
+      class="form-control"
+      id="name"
+      name="name"
+      placeholder="Enter name parking"
+      required
+    />
+  </div>
+  <div class="form-group">
+    <label for="name2">Name (Confirm)</label>
+    <input
+      type="text"
+      class="form-control"
+      id="name2"
+      name="name2"
+      placeholder="Confirm name parking"
+      required
+    />
+  </div>
+  <div class="form-group">
+    <label for="cp">C.P.</label>
+    <input
+      type="number"
+      class="form-control"
+      id="cp"
+      name="cp"
+      placeholder="Enter C.P parking"
+      required
+    />
+  </div>
+  <div class="form-group">
+    <label for="tel">Phone</label>
+    <input
+      type="number"
+      class="form-control"
+      id="tel"
+      name="tel"
+      placeholder="Enter phone parking"
+      required
+    />
+  </div>
+  <div class="form-group">
+    <label for="capacity">Capacity</label>
+    <input
+      type="number"
+      class="form-control"
+      id="capacity"
+      name="capacity"
+      placeholder="Enter capacity parking"
+      required
+    />
+  </div>
+  <br>
+  <input type="reset"><br>
+  <br>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+{% endblock %}

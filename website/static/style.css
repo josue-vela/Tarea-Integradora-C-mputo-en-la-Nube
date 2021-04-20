@@ -1,0 +1,17 @@
+html { font-family: sans-serif; padding: 1rem; }
+body { max-width: 960px; margin: 0 auto; }
+body {
+    background: #99cc99;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #99cccc, #99cc99);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #99cccc, #99cc99); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.img-centro { margin: 10px auto 10px; display: block; }
+
+.row {
+    color: white;
+    height: 100px;
+    line-height: 100px;
+    text-align: right;
+    vertical-align: middle;
+}
